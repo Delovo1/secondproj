@@ -3,6 +3,14 @@ const dots = document.querySelectorAll(".dot");
 const track = document.querySelector(".slides");
 let current = 0;
 
+document.addEventListener("DOMContentLoaded", () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector("header ul");
+
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+});
 function move(i) {
   current = (i + slides.length) % slides.length;
   track.style.transform = `translateX(-${current * 100}%)`;
