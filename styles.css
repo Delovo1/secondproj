@@ -28,6 +28,7 @@ header {
   min-height: 7rem;
   align-items: center;
   gap: 5rem;
+  position: relative;
 }
 header p,
 ul > a {
@@ -689,12 +690,13 @@ footer {
   #menu {
     display: none;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 7rem;
-    left: 0;
-    width: 100%;
+    left: 26.5%;
+    width: 50%;
+    border-radius: 0.8rem;
     background: white;
-    padding: 5rem 0;
+    padding: 2rem 0;
     gap: 1.5rem;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -703,7 +705,6 @@ footer {
 
   #menu.active {
     display: flex;
-    position: fixed;
   }
   .burger {
     display: flex; /* показываем кнопку */
