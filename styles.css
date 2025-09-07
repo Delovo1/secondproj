@@ -12,6 +12,8 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 html {
   font-size: 62.5%;
@@ -528,6 +530,10 @@ p.first {
 .advantage4 {
   background: url(images/bank.png);
   background-size: contain;
+}
+#adve {
+  font-size: 3.2rem;
+  margin: 3rem 0px;
 }
 #adv {
   font-size: 3.2rem;
